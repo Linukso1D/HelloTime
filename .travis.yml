@@ -3,5 +3,10 @@ language: java
 jdk:
   - oraclejdk8
 sudo: false
+branches:
+  only:
+  - master
 ## Run Integration tests
-script: "mvn test && mvn verify && mvn clean"
+script: "mvn install && mvn test && mvn verify"
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
