@@ -1,15 +1,10 @@
----
 language: java
+script: mvn test -f ./pom.xml
 jdk:
   - oraclejdk8
-sudo: false
-branches:
-  only:
-  - master
-## Run Integration tests
-script: "mvn install && mvn test -f ./pom.xml && mvn verify"
+  - oraclejdk7
+  - openjdk7
 before_install:
   - pip install codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
