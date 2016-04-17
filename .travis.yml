@@ -7,6 +7,9 @@ branches:
   only:
   - master
 ## Run Integration tests
-script: "mvn install && mvn test && mvn verify"
+script: "mvn install && mvn test -f ./pom.xml && mvn verify"
+before_install:
+  - pip install codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
