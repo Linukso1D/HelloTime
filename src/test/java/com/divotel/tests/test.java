@@ -36,6 +36,7 @@ public class test extends Assert
    public void testNum(String locale, String expected)
    {
 	final String actual = num(locale);
+	System.out.println("Actual " +actual + " ecpected "+ expected);
 	assertEquals(actual, expected);
    }
 
