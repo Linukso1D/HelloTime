@@ -5,6 +5,8 @@
  */
 package com.divotek.hellotime;
 
+import static com.divotek.hellotime.LogWriter.LogWriter;
+
 /**
  *
  * @author maxxl
@@ -17,7 +19,11 @@ public class Main
     */
    public static void main(String[] args)
    {
-	System.out.println("HelloTime");
+	LogWriter.init();
+	LogWriter("AnyText");
+	LogWriter.close();
+	LogWriter.init();
+	LogWriter("Teext");
    }
    
 }

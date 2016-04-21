@@ -5,11 +5,12 @@
  */
 package com.divotek.hellotime;
 
+import java.text.SimpleDateFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *
+ * Check day state
  * @author maxxl
  */
 public class Time
@@ -35,22 +36,24 @@ public class Time
     */
    public boolean morning(final String str)
    {
-	if(str!=null){
-	pattern = Pattern.compile(MORNING_TIME);
-	matcher = pattern.matcher(str);
-	return matcher.matches();
+	if(str != null)
+	{
+	   pattern = Pattern.compile(MORNING_TIME);
+	   matcher = pattern.matcher(str);
+	   return matcher.matches();
 	}
 	return false;
    }
 
    /**
     * Validate day time
+    *
     * @param str time address for validation
     * @return true valid time fromat(09:00-18:59), false invalid time format
     */
    public boolean day(final String str)
    {
-	if(str!=null)
+	if(str != null)
 	{
 	   pattern = Pattern.compile(DAY_TIME);
 	   matcher = pattern.matcher(str);
@@ -61,12 +64,13 @@ public class Time
 
    /**
     * Validate evening time
+    *
     * @param str time address for validation
     * @return true valid time fromat(19:00-22:59), false invalid time format
     */
    public boolean evening(final String str)
    {
-	if(str!=null)
+	if(str != null)
 	{
 	   pattern = Pattern.compile(EVENING_TIME);
 	   matcher = pattern.matcher(str);
@@ -77,18 +81,30 @@ public class Time
 
    /**
     * Validate night time
+    *
     * @param str time address for validation
     * @return true valid time fromat(23:00-05:59), false invalid time format
     */
    public boolean night(final String str)
    {
-	if(str!=null)
+	if(str != null)
 	{
 	   pattern = Pattern.compile(NIGHT_TIME);
 	   matcher = pattern.matcher(str);
 	   return matcher.matches();
 	}
 	return false;
+   }
+
+   /**
+    * Getter of current time
+    *
+    * @return String HH:mm
+    */
+   public static String currentTime()
+   {
+	SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm"); //11:27
+	return dateFormat.toString();
    }
 
 }

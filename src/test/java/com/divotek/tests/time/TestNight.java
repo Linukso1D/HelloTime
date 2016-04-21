@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.divotek.tests;
+package com.divotek.tests.time;
 
 import com.divotek.hellotime.Time;
 import org.junit.*;
