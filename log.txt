@@ -1,11 +1,14 @@
-апр 21, 2016 9:13:21 AM com.divotek.hellotime.LogWriter init
+апр 22, 2016 5:22:04 PM com.divotek.hellotime.LogWriter init
 INFO: Init log
-апр 21, 2016 9:13:21 AM com.divotek.hellotime.LogWriter LogWriter
-INFO: First message
-апр 21, 2016 9:13:21 AM com.divotek.hellotime.LogWriter LogWriter
-INFO: Second message
-апр 21, 2016 9:13:21 AM com.divotek.hellotime.LogWriter init
-INFO: Init log
-апр 21, 2016 9:13:21 AM com.divotek.hellotime.LogWriter LogWriter
-SEVERE: Message Exc
-  Exceprion: javax.swing.UnsupportedLookAndFeelException: Where is my look and feel
+апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Now 17:22
+апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check morning
+апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check day
+апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Добрый день, Мир!
+апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check evening
+апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check night

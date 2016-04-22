@@ -33,8 +33,7 @@ public class TestLogWriter extends Assert
 	assertFalse(LogWriter.close());
 	LogWriter("Close writer");
 	assertTrue(LogWriter.init());
-	LogWriter("Message Exc",new UnsupportedLookAndFeelException("Where is my look and feel"));
-	
+	LogWriter("Message Exc",new UnsupportedLookAndFeelException("Where is my look and feel"));	
    }
    
 }

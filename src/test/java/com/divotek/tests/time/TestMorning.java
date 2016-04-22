@@ -17,7 +17,7 @@ import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
 /**
- * Time format validator Morning
+ * Test validator of the morning time format
  * @author maxxl
  */
 @RunWith(Theories.class)

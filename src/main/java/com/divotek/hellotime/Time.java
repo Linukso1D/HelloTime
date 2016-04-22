@@ -6,11 +6,13 @@
 package com.divotek.hellotime;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Check day state
+ *
  * @author maxxl
  */
 public class Time
@@ -29,10 +31,10 @@ public class Time
    }
 
    /**
-    * Validate morning time
+    * Validator of the morning time format
     *
-    * @param str time address for validation
-    * @return true valid time fromat(06:00-08:59), false invalid time format
+    * @param str - The line is subject to validation
+    * @return valid time fromat(06:00-08:59), invalid time format
     */
    public boolean morning(final String str)
    {
@@ -46,10 +48,10 @@ public class Time
    }
 
    /**
-    * Validate day time
+    * Validator of the day time format
     *
     * @param str time address for validation
-    * @return true valid time fromat(09:00-18:59), false invalid time format
+    * @return valid time fromat(09:00-18:59), invalid time format
     */
    public boolean day(final String str)
    {
@@ -63,10 +65,10 @@ public class Time
    }
 
    /**
-    * Validate evening time
+    * Validator of the evening time format
     *
-    * @param str time address for validation
-    * @return true valid time fromat(19:00-22:59), false invalid time format
+    * @param str - The line is subject to validation
+    * @return valid time fromat(19:00-22:59), invalid time format
     */
    public boolean evening(final String str)
    {
@@ -80,10 +82,10 @@ public class Time
    }
 
    /**
-    * Validate night time
+    * Validator of the night time format
     *
-    * @param str time address for validation
-    * @return true valid time fromat(23:00-05:59), false invalid time format
+    * @param str - The line is subject to validation
+    * @retur valid time fromat(23:00-05:59), invalid time format
     */
    public boolean night(final String str)
    {
@@ -104,7 +106,7 @@ public class Time
    public static String currentTime()
    {
 	SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm"); //11:27
-	return dateFormat.toString();
+	return dateFormat.format(new Date());
    }
 
 }
