@@ -60,7 +60,7 @@ public class LogWriter
    }
 
    /**
-    * Data cleaning (close FileHandler & logger)
+    * Data cleaning (close FileHandler and logger)
     * @return Log status
     */
    public static boolean close()
@@ -84,13 +84,13 @@ public class LogWriter
 /**
  * @param msg Log message
  * @param status Returns true in case matcher has successfully identified time {@link Time} 
- * 
+ * @return Returns true in case matcher has successfully identified time {@link Time}
  */
    public static boolean LogWriter(String msg, boolean status)
    {
 	if(active)
 	{
-	   logger.info(msg+status);
+	   logger.info(msg+" "+status);
 	}
 	return status;
    }

@@ -85,7 +85,7 @@ public class Time
     * Validator of the night time format
     *
     * @param str - The line is subject to validation
-    * @retur valid time fromat(23:00-05:59), invalid time format
+    * @return valid time fromat(23:00-05:59), invalid time format
     */
    public boolean night(final String str)
    {

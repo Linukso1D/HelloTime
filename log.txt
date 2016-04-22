@@ -1,14 +1,53 @@
-апр 22, 2016 5:22:04 PM com.divotek.hellotime.LogWriter init
+апр 22, 2016 7:40:20 PM com.divotek.hellotime.LogWriter init
 INFO: Init log
-апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
-INFO: Now 17:22
-апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
-INFO: Check morning
-апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
-INFO: Check day
-апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
-INFO: Добрый день, Мир!
-апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
-INFO: Check evening
-апр 22, 2016 5:22:05 PM com.divotek.hellotime.LogWriter LogWriter
-INFO: Check night
+апр 22, 2016 7:40:20 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Now 19:40
+апр 22, 2016 7:40:20 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check morning false
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check day false
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check evening true
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Добрый вечер, Мир!
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check night false
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter init
+INFO: Init log
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Now 19:40
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check morning false
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check day false
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check evening true
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Добрый вечер, Мир!
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check night false
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter init
+INFO: Init log
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Now 19:40
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check morning false
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check day false
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check evening true
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Good Evening, World!
+Apr 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Check night false
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter init
+INFO: Init log
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: First message
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+INFO: Second message
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter init
+INFO: Init log
+апр 22, 2016 7:40:21 PM com.divotek.hellotime.LogWriter LogWriter
+SEVERE: Message Exc
+  Exceprion: javax.swing.UnsupportedLookAndFeelException: Where is my look and feel

@@ -22,7 +22,7 @@ public class Facade
 
    public Facade()
    {
-	LogWriter.init();
+	
 	locale = new Locales();
 	time = new Time();
 	timeFormat = Time.currentTime();
@@ -34,7 +34,7 @@ public class Facade
    @Deprecated
    public void check()
    {
-	
+	LogWriter.init();
 	LogWriter.LogWriter
 	(
 		   com.divotek.hellotime.R.R.Text.NOW					   +
@@ -80,6 +80,7 @@ public class Facade
 			time.night(timeFormat)
 	   )
 	);
+	LogWriter.close();
    }
    
    
