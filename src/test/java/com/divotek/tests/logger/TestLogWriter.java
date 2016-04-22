@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 package com.divotek.tests.logger;
+
 import com.divotek.hellotime.LogWriter;
 import static com.divotek.hellotime.LogWriter.*;
 import javax.swing.UnsupportedLookAndFeelException;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 /**
  *
  * @author maxxl
@@ -20,12 +23,13 @@ public class TestLogWriter extends Assert
    @BeforeClass
    public static void before()
    {
-	System.out.println("------------------- Test Log-----------------------");
+	System.out.println("\n\n\n------------------- Test Log -----------------------\n\n\n");
    }
+
    @Test
    public void logWriter()
    {
-   	assertTrue(LogWriter.init());
+	assertTrue(LogWriter.init());
 	LogWriter("First message");
 	assertTrue(LogWriter.init());
 	LogWriter("Second message");
@@ -33,7 +37,13 @@ public class TestLogWriter extends Assert
 	assertFalse(LogWriter.close());
 	LogWriter("Close writer");
 	assertTrue(LogWriter.init());
-	LogWriter("Message Exc",new UnsupportedLookAndFeelException("Where is my look and feel"));	
+	LogWriter("Message Exc", new UnsupportedLookAndFeelException("Where is my look and feel"));
    }
-   
+
+   @AfterClass
+   public static void after()
+   {
+	System.out.println("\n\n\n------------------- Test Log -----------------------\n\n\n");
+   }
+
 }

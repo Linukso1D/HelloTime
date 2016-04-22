@@ -47,7 +47,7 @@ public class TestMorning extends Assert
   @BeforeClass
    public static void init()
    {
-   System.out.println("-------------------- Morning test --------------------");
+   System.out.println("\n\n\n-------------------- Morning test --------------------\n\n\n");
    }
    @Before
    public void morning()
